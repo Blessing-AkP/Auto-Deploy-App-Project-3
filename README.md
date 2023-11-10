@@ -1,13 +1,12 @@
-# CI/CD Pipeline Mastery Project
-
+# Auto Deploy Web Application
 ## Project Overview
 
 This project exemplifies advanced proficiency in Continuous Integration/Continuous Deployment (CI/CD) principles, deployment strategies, configuration management, and structured logging for cloud-based software products. It embodies industry-best practices and utilizes robust tools to automate the build, test, and deployment processes, showcasing a professional approach to software delivery.
 
 ## Objectives
 
-- **CI/CD Fundamentals:**
-  - Articulate the core principles and advantages of CI/CD in achieving automated and efficient deployment workflows for cloud-based software.
+- **CI/CD:**
+  - Articulate the core principles and advantages of CI/CD in achieving automated and efficient deployment workflows for cloud-based software with circleCi.
 
 - **Deployment Strategies:**
   - Design and implement CI/CD pipelines that adhere to Continuous Delivery practices, employing deployment strategies for reliable software deployment.
@@ -43,4 +42,14 @@ The project's architecture adheres to industry standards, utilizing a combinatio
 
 1. **Clone the Repository:**
    ```bash
-   git clone [URL01]
+   git clone https://github.com/Blessing-AkP/Auto-Deploy-App-Project-3.git
+  ```
+2. **Deploying Backend on EC2:**
+Leverage CircleCI jobs to deploy the application backend to EC2 instances.
+ ```bash
+   circleci config validate # Validate CircleCI configuration
+    circleci local execute # Run CircleCI jobs locally
+  ```
+
+
+
