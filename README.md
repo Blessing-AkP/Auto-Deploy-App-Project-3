@@ -41,15 +41,40 @@ The project's architecture adheres to industry standards, utilizing a combinatio
 ## Getting Started
 
 1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/Blessing-AkP/Auto-Deploy-App-Project-3.git
-  ```
-2. **Deploying Backend on EC2:**
-Leverage CircleCI jobs to deploy the application backend to EC2 instances.
- ```bash
-   circleci config validate # Validate CircleCI configuration
-    circleci local execute # Run CircleCI jobs locally
-  ```
+```bash
+git clone https://github.com/Blessing-AkP/Auto-Deploy-App-Project-3.git
+```
+
+2. **Setting Up AWS Resources:**
+   Use AWS CLI and CloudFormation for infrastructure creation.
+```bash
+aws cloudformation create-stack --stack-name my-stack --template-body file://cloudformation_template.yaml
+```
+
+3. **Deploying Backend on EC2:**
+   Leverage CircleCI jobs to deploy the application backend to EC2 instances.
+```bash
+circleci config validate # Validate CircleCI configuration
+circleci local execute # Run CircleCI jobs locally
+```
+
+4. **Monitoring with Prometheus:**
+   Establish and monitor application metrics using Prometheus.
+```bash
+docker-compose up -d prometheus # Start Prometheus server
+```
+
+5. Access Deployed Components:
+    Access the deployed components via the provided public URLs
+
+##Built With
+Circle CI: Cloud-based CI/CD service
+Amazon AWS: Cloud services
+AWS CLI: Command-line tool for AWS
+CloudFormation: Infrastructure as code
+Ansible: Configuration management tool
+Prometheus: Monitoring tool
+
 
 
 
