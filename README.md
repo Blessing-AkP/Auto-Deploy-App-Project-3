@@ -1,64 +1,46 @@
-We are archiving this repository because we do not want learners to push personal development to the current repository. If you have any issues or suggestions to make, feel free to:
-- Utilize the https://knowledge.udacity.com/ forum to seek help on content-specific issues.
-- [Submit a support ticket](https://udacity.zendesk.com/hc/en-us/requests/new) along with the link to your forked repository. 
-- If you are an enterprise learner, please [Submit a support ticket here](https://udacityenterprise.zendesk.com/hc/en-us/requests/new?ticket_form_id=360000279131)
+# CI/CD Pipeline Mastery Project
 
-## Give your Application Auto-Deploy Superpowers
+## Project Overview
 
-In this project, you will prove your mastery of the following learning objectives:
+This project exemplifies advanced proficiency in Continuous Integration/Continuous Deployment (CI/CD) principles, deployment strategies, configuration management, and structured logging for cloud-based software products. It embodies industry-best practices and utilizes robust tools to automate the build, test, and deployment processes, showcasing a professional approach to software delivery.
 
-- Explain the fundamentals and benefits of CI/CD to achieve, build, and deploy automation for cloud-based software products.
-- Utilize Deployment Strategies to design and build CI/CD pipelines that support Continuous Delivery processes.
-- Utilize a configuration management tool to accomplish deployment to cloud-based servers.
-- Surface critical server errors for diagnosis using centralized structured logging.
+## Objectives
 
-![Diagram of CI/CD Pipeline we will be building.](udapeople.png)
+- **CI/CD Fundamentals:**
+  - Articulate the core principles and advantages of CI/CD in achieving automated and efficient deployment workflows for cloud-based software.
 
-### Instructions
+- **Deployment Strategies:**
+  - Design and implement CI/CD pipelines that adhere to Continuous Delivery practices, employing deployment strategies for reliable software deployment.
 
-* [Selling CI/CD](instructions/0-selling-cicd.md)
-* [Getting Started](instructions/1-getting-started.md)
-* [Deploying Working, Trustworthy Software](instructions/2-deploying-trustworthy-code.md)
-* [Configuration Management](instructions/3-configuration-management.md)
-* [Turn Errors into Sirens](instructions/4-turn-errors-into-sirens.md)
+- **Configuration Management:**
+  - Utilize Ansible, a powerful configuration management tool, to ensure consistent and reproducible deployments to cloud-based servers.
 
-### Project Submission
+- **Structured Logging:**
+  - Implement structured logging methodologies to identify and diagnose critical server errors, enhancing monitoring capabilities.
 
-For your submission, please submit the following:
+## Project Architecture
 
-- A text file named `urls.txt` including:
-  1. Public Url to GitHub repository (not private) [URL01]
-  1. Public URL for your S3 Bucket (aka, your green candidate front-end) [URL02]
-  1. Public URL for your CloudFront distribution (aka, your blue production front-end) [URL03]
-  1. Public URLs to deployed application back-end in EC2 [URL04]
-  1. Public URL to your Prometheus Server [URL05]
-- Your screenshots in JPG or PNG format, named using the screenshot number listed in the instructions. These screenshots should be included in your code repository in the root folder.
-  1. Job failed because of compile errors. [SCREENSHOT01]
-  1. Job failed because of unit tests. [SCREENSHOT02]
-  1. Job that failed because of vulnerable packages. [SCREENSHOT03]
-  1. An alert from one of your failed builds. [SCREENSHOT04]
-  1. Appropriate job failure for infrastructure creation. [SCREENSHOT05]
-  1. Appropriate job failure for the smoke test job. [SCREENSHOT06]
-  1. Successful rollback after a failed smoke test. [SCREENSHOT07]  
-  1. Successful promotion job. [SCREENSHOT08]
-  1. Successful cleanup job. [SCREENSHOT09]
-  1. Only deploy on pushed to `master` branch. [SCREENSHOT10]
-  1. Provide a screenshot of a graph of your EC2 instance including available memory, available disk space, and CPU usage. [SCREENSHOT11]
-  1. Provide a screenshot of an alert that was sent by Prometheus. [SCREENSHOT12]
+The project's architecture adheres to industry standards, utilizing a combination of AWS services, Circle CI for CI/CD, Ansible for configuration management, and Prometheus for monitoring.
 
-- Your presentation should be in PDF format named "presentation.pdf" and should be included in your code repository root folder. 
+## Project Structure
 
-Before you submit your project, please check your work against the project rubric. If you haven’t satisfied each criterion in the rubric, then revise your work so that you have met all the requirements. 
+- **docs/:**
+  - Holds project documentation, including architecture diagrams and additional resources.
 
-### Built With
+- **src/:**
+  - Contains source code for the application, organized into backend and frontend components.
 
-- [Circle CI](www.circleci.com) - Cloud-based CI/CD service
-- [Amazon AWS](https://aws.amazon.com/) - Cloud services
-- [AWS CLI](https://aws.amazon.com/cli/) - Command-line tool for AWS
-- [CloudFormation](https://aws.amazon.com/cloudformation/) - Infrastrcuture as code
-- [Ansible](https://www.ansible.com/) - Configuration management tool
-- [Prometheus](https://prometheus.io/) - Monitoring tool
+- **scripts/:**
+  - Houses deployment, monitoring, and infrastructure creation scripts.
 
-### License
+- **tests/:**
+  - Includes unit tests and scripts for vulnerability testing.
 
-[License](LICENSE.md)
+- **.circleci/:**
+  - Encompasses configuration files for CircleCI workflows and jobs.
+
+## Getting Started
+
+1. **Clone the Repository:**
+   ```bash
+   git clone [URL01]
