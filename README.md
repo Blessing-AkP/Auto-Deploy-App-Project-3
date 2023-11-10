@@ -67,8 +67,9 @@ docker-compose up -d prometheus # Start Prometheus server
 5. Access Deployed Components:
     Access the deployed components via the provided public URLs
 
-##Built With
-Circle CI: Cloud-based CI/CD service
+## Built With
+
+**Circle CI:** Cloud-based CI/CD service
 Amazon AWS: Cloud services
 AWS CLI: Command-line tool for AWS
 CloudFormation: Infrastructure as code
